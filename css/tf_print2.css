@@ -19,7 +19,7 @@
 
 /* Hidden Objects */
 
-nav.horizontal, nav#info, section#left, h1, footer {
+nav.horizontal, body > h1, nav#info, section#left, footer {
    display: none;
 }
 
@@ -32,15 +32,65 @@ nav.horizontal, nav#info, section#left, h1, footer {
 
 /* Header Styles */
 
-
+img#logo {
+   display: block;
+   width: 100%;
+}
 
 /* Typography Styles */
 
+article header {
+   margin-bottom: 0.2in;
+}
 
+article h1 {
+   font-size: 24pt;
+   line-height: 26pt;
+}
+
+aside {
+   background-color: rgb(211, 211, 211);
+   margin-top: 0.3in;
+}
+
+aside h1 {
+   font-size: 18pt;
+   line-height: 20pt;
+}
+
+aside img {
+   width: 0.8in;
+}
+
+p {
+   font-size: 12pt;
+   margin: 0.1in 0in;
+}
 
 /* Hypertext Styles */
 
+a {
+   color: black;
+   text-decoration: none;
+}
 
+a::after {
+   content: " {" attr(href) ") ";
+   font-weight: bold;
+   word-wrap: break-word;
+}
 
 /* Page Break Styles */
 
+aside {
+   page-break-after: always;
+}
+
+img, ol, ul {
+   page-break-inside: avoid;
+}
+
+p {
+   orphans: 3;
+   widows: 3;
+}

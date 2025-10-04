@@ -19,11 +19,16 @@
 
 /* Hidden Objects */
 
-
+nav.horizontal, nav#info, section#left, h1, footer {
+   display: none;
+}
 
 /* Page Box Styles */
 
-
+@page {
+   size: 8.5in 11in;
+   margin: 0.5in;
+}
 
 /* Header Styles */
 
@@ -34,7 +39,6 @@
 
 
 /* Hypertext Styles */
-
 
 
 

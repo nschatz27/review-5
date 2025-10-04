@@ -38,6 +38,7 @@ section#right {
    -webkit-flex: 8 1 351px;
    flex: 8 1 351px;
 }
+
 section.tips {
    display: -webkit-flex;
     display: flex;
@@ -58,8 +59,8 @@ aside {
 nav.horizontal ul {
    display: -webkit-flex;
    display: flex;
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
+   -webkit-flex-flow: column wrap;
+   flex-flow: column wrap;
 }
 
 
@@ -70,8 +71,6 @@ nav.horizontal ul {
 */
 	
 @media only screen and (max-width: 480px) {
-
-   /* Navigation styles */
 
    nav.vertical ul {
       display: -webkit-flex;
@@ -90,6 +89,8 @@ nav.horizontal ul {
       -webkit-order: 100;
       order: 100;
    }
+
+   /* Navigation Lists */
 
    a#navicon {
       display: block;
@@ -114,10 +115,9 @@ nav.horizontal ul {
 
    /* Navigation styles */
 
-   nav.horizontal li {
+   nav.horizontal ul {
       height: 160px;
    }
-
 
 }
 
